@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #130F1B;
+}
+
+/* Navbar */
+.navbar {
+  display:flex;
+  justify-content: space-between;
+  background-color: #130F1B;
+  align-items: center;
+  font-family: 'Silkscreen', cursive;
+  overflow: hidden;
+}
+
+.logo {
+  margin-left: 2.2rem;
+  width: 100px;
+  height: auto;
+  position: relative;
+  top: 5px;
+}
+
+.navlinks ul {
+  margin: 0;
+  padding: 0;
+  margin-right: 2rem;
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  justify-self: center;
+}
+
+.navlinks ul a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  padding: 1.7rem;
+  color: white
+}
+
+.navlinks ul a:hover {
+  /* color: rgb(63, 32, 177); */
+  color: rgb(207, 162, 38);
+}
+
+.toggle-button {
+  position: absolute;
+  top: .75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+
+/* Hero */
+.hero {
+  height: 100vh;
+  background-color: #130F1B;
+  background-image: url('assets/hero-background.png');
+}
+
+
+/* Game Cards */
+.games {
+  height: 100vh;
+  background-color: #130F1B;
+}
+
+.games .game-section-title{
+  color: white;
+  font-family: 'Silkscreen', cursive;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 1rem;
+}
+
+.card-containers {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card-containers .card {
+  margin: 2rem;
+  text-align: center;
+  background-color: #1F1B26;
+  color: white;
+}
+
+.card img {
+  border-radius: 5px;
+}
+
+.card-title {
+  font-family: 'Silkscreen';
+  border-bottom: 2px solid #130F1B;
+}
+
+.card-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: medium;
+}
+
+
+/* Media Query */
+@media (max-width: 600px) {
+  .toggle-button {
+    display: flex;
+    margin: 25px;
+  }
+
+  .navlinks {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .navlinks ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .navlinks li {
+    text-align: center;
+    margin: 0.75rem;
+  }
+
+  .navlinks.active {
+    display: flex;
+  }
+}
+
