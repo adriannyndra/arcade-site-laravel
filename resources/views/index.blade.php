@@ -2,8 +2,7 @@
 @section('content')
 
 
-<section class="hero">
-  
+<section class="hero">  
 </section>
 
 <section class="games">
@@ -27,8 +26,8 @@
         <a href="https://spacejump.netlify.app/"></a>
       </div>
     </div> -->
+    
   </div>
-
 </section>
 
     
